@@ -52,4 +52,6 @@ sudo echo "spotlight = no" >> /usr/local/etc/afp.conf
 sudo systemctl enable avahi-daemon
 sudo systemctl enable netatalk
 sudo systemctl start avahi-daemon
+sudo journalctl -u avahi-daemon
 sudo systemctl start netatalk
+sudo journalctl -u avahi-daemon
