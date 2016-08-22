@@ -42,10 +42,6 @@ cd netatalk-3.1.9
         --with-dbus-sysconf-dir=/etc/dbus-1/system.d \
         --with-tracker-pkgconfig-version=1.0
 
-# Check
-echo "- - - Check - - - "
-pkg-config --list-all | grep tracker
-
 make
 
 echo "run sudo make install"
