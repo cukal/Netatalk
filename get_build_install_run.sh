@@ -43,5 +43,13 @@ cd netatalk-3.1.9
         --with-tracker-pkgconfig-version=1.0
 
 make
+sudo make install
 
-echo "run sudo make install"
+sudo echo "[DIGIKAM_ROOT_ALBUM]" >> /usr/local/etc/afp.conf
+sudo echo "path = /DISK1/DIGIKAM_DATA/DIGIKAM_ROOT_ALBUM/" >> /usr/local/etc/afp.conf
+sudo echo "spotlight = no" >> /usr/local/etc/afp.conf
+
+sudo systemctl enable avahi-daemon
+sudo systemctl enable netatalk
+sudo systemctl start avahi-daemon
+sudo systemctl start netatalk
