@@ -49,6 +49,8 @@ sudo echo "[DIGIKAM_ROOT_ALBUM]" >> /usr/local/etc/afp.conf
 sudo echo "path = /DISK1/DIGIKAM_DATA/DIGIKAM_ROOT_ALBUM/" >> /usr/local/etc/afp.conf
 sudo echo "spotlight = no" >> /usr/local/etc/afp.conf
 
+sudo cat /usr/local/etc/afp.conf
+
 sudo systemctl enable avahi-daemon
 sudo systemctl enable netatalk
 sudo systemctl start avahi-daemon
