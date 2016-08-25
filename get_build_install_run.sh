@@ -49,6 +49,8 @@ cd netatalk-3.1.9
 make
 sudo make install
 
+sudo mv -v /usr/local/etc/afp.conf /usr/local/etc/afp.conf_OLD
+
 sudo sh -c 'echo "[DIGIKAM_ROOT_ALBUM]" >>/usr/local/etc/afp.conf'
 sudo sh -c 'echo "path = /DISK1/DIGIKAM_DATA/DIGIKAM_ROOT_ALBUM/" >> /usr/local/etc/afp.conf'
 sudo sh -c 'echo "spotlight = no" >> /usr/local/etc/afp.conf'
