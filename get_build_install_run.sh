@@ -2,7 +2,7 @@
 
 # Prereq's
 apt-get --yes --force-yes install \
-build-essentials \
+build-essential \
 libevent-dev \
 libssl-dev \
 libgcrypt11-dev \
