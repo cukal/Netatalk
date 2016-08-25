@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#If installed, stop
+sudo systemctl stop avahi-daemon
+sudo systemctl stop netatalk
+
 # Prereq's
 sudo apt-get --yes --force-yes install \
 build-essential \
