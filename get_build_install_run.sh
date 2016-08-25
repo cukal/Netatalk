@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prereq's
-apt-get --yes --force-yes install \
+sudo apt-get --yes --force-yes install \
 build-essential \
 libevent-dev \
 libssl-dev \
