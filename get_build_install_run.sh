@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#If installed, stop
 sudo systemctl stop avahi-daemon
 sudo systemctl stop netatalk
 
