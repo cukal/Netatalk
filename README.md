@@ -1,5 +1,5 @@
 # Netatalk
 
-//Install file
+--install
 
 Quickly! Quickly! Quickly!
